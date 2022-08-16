@@ -1,0 +1,31 @@
+<meta chatset="UTF-8">
+<h1>PROGRAMA PARA CALCULAR PUNTOS DE UN EQUIPO DE FUTBOL </h1>
+<script>
+    // hace un programa que calcule las puntuaciones de un equipo en la liga
+    // partido ganado son 3 puntos, empatado 1 punto y perdido 0 
+
+    // el usuario debera escribir cuantos partidos el equpo gano, cuantos empato y que 
+    // devuelva el resultado con la operacion realizada
+    function saltarLinea() {
+        document.write("<br>");     
+        document.write("<br>"); 
+    }
+
+    function imprimir(frase){
+        document.write(frase); 
+        saltarLinea();
+    }
+    // imprimir("10" * 2); // 20 multiplica
+    // imprimir("10" + 20); //1020 concatena
+
+    
+    var victorias = parseInt(prompt("Ingrese la cantidad de victorias "));
+    var empates = parseInt(prompt("Ingrese la cantidad de empates "));
+
+    var puntosTotales = (victorias * 3 ) + empates;
+
+    imprimir("El total de puntos de equipo es: " + puntosTotales);
+
+
+</script>
+

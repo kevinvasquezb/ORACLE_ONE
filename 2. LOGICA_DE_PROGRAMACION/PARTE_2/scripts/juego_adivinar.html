@@ -1,0 +1,32 @@
+<meta chatset="UTF-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION </h1>
+
+<script>
+    // usuario ingresa un numero entre 0 y 10 
+    // decirle si el usuario adivino o no el numero
+
+    function saltarLinea() {
+        document.write("<br>");     
+        document.write("<br>"); 
+    }
+
+    function imprimir(frase){
+        document.write(frase); 
+        saltarLinea();
+    }
+    
+    var numeroPensado = Math.round(Math.random()*10);
+    var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0-10"))
+
+    if (numeroPensado==numeroLanzado){
+        imprimir("Usted acerto")
+
+    }
+
+    else {
+        imprimir("Usted erró, el numero pensado era " + numeroPensado)
+    }
+
+</script>
+

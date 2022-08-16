@@ -1,0 +1,39 @@
+<meta chatset="UTF-8">
+<h1>PROGRAMA CALCULAR IMC </h1>
+<script>
+    // calcular el promedio de imc de personas
+
+    function saltarLinea() {
+        document.write("<br>");     
+        document.write("<br>"); 
+    }
+
+    function imprimir(frase){
+        document.write(frase); 
+        saltarLinea();
+    }
+    
+    function calcularIMC (peso,altura){
+
+        imc = peso/ (altura * altura);
+        return (imc);
+    }
+
+    var nombre = prompt("informe su nombre: ")
+    var pesoInformado = prompt(nombre + ", informe su peso: ")
+    var alturaInformado = prompt(nombre + ", informe su altura: ")
+
+    imcCalculado = calcularIMC(pesoInformado, alturaInformado)
+
+    imprimir(nombre + ", su IMC calculado es "   + imcCalculado)
+
+    if (imcCalculado<18.5){
+        imprimir("IMC abajo de lo recomendado");
+    }else if(imcCalculado>=18.5 && imcCalculado<24.9){
+        imprimir("IMC esta dentro del intervalo normal");
+    }else {
+        imprimir("IMC considerado como obesidad");
+    }
+
+</script>
+
