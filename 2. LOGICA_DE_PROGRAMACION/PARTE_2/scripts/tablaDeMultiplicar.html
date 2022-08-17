@@ -1,0 +1,33 @@
+<meta chatset="UTF-8">
+
+<h1>PROGRAMA AÑO MUNDIAL DE LA FIFA</h1>
+
+<script>
+    // programa que calcule que años hubo mundial
+
+
+
+    function saltarLinea() {
+        document.write("<br>");     
+        document.write("<br>"); 
+    }
+
+    function imprimir(frase){
+        document.write(frase); 
+        saltarLinea();
+    }
+    
+    var multiplicador = 1;
+    var tablaDeMultiplicar = parseInt(prompt("ingrese el numero de tabla de multiplicar: "));
+
+
+    while(multiplicador <= 10){
+        imprimir(tablaDeMultiplicar * multiplicador);
+        multiplicador = multiplicador + 1; 
+
+    }
+
+    
+
+
+</script>
