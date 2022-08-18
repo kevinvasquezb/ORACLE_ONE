@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<h1>Programa que calcula los numeros pares del 1 al 100</h1>
+
+<script>
+     function saltarLinea() {
+        document.write("<br>");     
+        document.write("<br>"); 
+    }
+
+    function imprimir(frase){
+        document.write(frase); 
+        saltarLinea();
+    }
+//     var contador = 2;
+
+// while(contador<=100){
+//     imprimir(contador);
+//     contador =contador +2
+// }
+
+contador = 1;
+
+while (contador<=100){
+    if(contador%2 ==0){
+        imprimir(contador)
+    }
+    contador++;
+}
+
+imprimir('Fin');
+
+
+</script>

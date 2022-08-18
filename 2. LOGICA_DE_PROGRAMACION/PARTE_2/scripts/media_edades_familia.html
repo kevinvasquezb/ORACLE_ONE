@@ -1,0 +1,33 @@
+<meta chatset="UTF-8">
+
+<h1>PROGRAMA PARA CALCULAR LA MEDIA DE LAS EDADE DE UNA FAMILIA</h1>
+
+<script>
+    // programa que calcule que años hubo mundial
+
+    function saltarLinea() {
+        document.write("<br>");     
+        document.write("<br>"); 
+    }
+
+    function imprimir(frase){
+        document.write(frase); 
+        saltarLinea();
+    }
+
+    var numeroMiembros = parseInt(prompt("ingrese la cantidad de miembros de una familia "));
+    var contador = 1;
+    
+    var totalEdades = 0; 
+
+    while(contador <= numeroMiembros){
+        
+        edad = parseInt(prompt("Ingrese la edad del familiar"));
+        totalEdades = totalEdades + edad; 
+        contador++;
+    }
+    mediaEdades = totalEdades/numeroMiembros
+
+    imprimir("La media de las edades de la familia es " + mediaEdades)
+    imprimir("Fin")
+</script>
