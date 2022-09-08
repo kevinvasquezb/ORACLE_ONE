@@ -172,10 +172,6 @@ td,th{
 }
 
 
-p:first-line{
-    font-style:italic;
-}
-
 .principal p{
     margin: 0 0 1em;
 }
@@ -242,8 +238,13 @@ p:first-line{
 
 .imagen-diferenciales{
     width:60%;
-}
+    transition:400ms;
+    }
 
+    
+.imagen-diferenciales:hover{
+    opacity:30%;
+}
 
 .video{
     width:560px;
