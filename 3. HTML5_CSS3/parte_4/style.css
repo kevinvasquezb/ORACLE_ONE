@@ -255,10 +255,10 @@ td,th{
 
 @media screen and (max-width:480px){
     h1{
-    text-align: center;  
+        text-align: center;  
     }
     nav{
-    position:static;
+        position:static;
     }
     .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
         width:auto;
