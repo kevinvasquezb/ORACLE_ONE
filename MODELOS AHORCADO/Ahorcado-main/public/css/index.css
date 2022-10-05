@@ -1,0 +1,556 @@
+body{
+    margin: 0; 
+    padding: 0;
+    background: #E5E5E5;
+}
+
+.flex{
+    display: flex;
+}
+
+.content{
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+}
+
+p{
+    background-color: transparent;
+    text-align: start;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0%;
+}
+
+
+@media  only screen and (max-width: 499px) {
+
+    header{
+        position:relative;
+        width: 100%;
+        height: 96px;
+    }
+
+    .logo{
+    /* Top */
+    position: absolute;
+    left: 4.27%;
+    right: 87.2%;
+    top: 25%;
+    bottom: 25%;
+    }
+
+    .index{
+        margin-top: 198px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding: 24px;
+        gap: 8px;
+    }
+
+    .content{
+        margin: auto;
+        padding: 10px;
+    }
+
+    .btnInicio1 {
+        background-color: #0A3871;
+        border-radius: 24px;
+        width: 317px;
+        height: 105px;
+        margin: 5px;
+        color: white;
+        font-family: 'Inter';
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .btnInicio2{
+        background-color: transparent;
+        border-radius: 24px;
+        width: 278px;
+        height: 66px;
+        margin: 5px;
+        color:#0A3871;
+        font-family: 'Inter';
+        font-size: 20px;
+        cursor: pointer;
+        border: 1px solid #0A3871;
+    }
+
+    span.line{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        border-bottom: 3px solid #0A3871;
+        color: #0A3871;
+        font-family: 'Inter';
+        font-size: 20px;
+    }
+
+    span{
+        width: auto;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--dkblue);
+        font-family: 'Inter';
+    }
+    span.spaceline{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border-bottom: none;
+    }
+    .boxWords{
+        text-align: center;
+        margin: auto;
+        padding-bottom: 20px;
+        display: flex;
+    }
+
+
+    canvas{
+        position:relative;
+        margin-top: 33px;
+        margin-bottom: 9px;
+    }
+
+    .container-canvas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+     #cvDraw {
+        width: 276px;
+    }
+
+    .btns-juego{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-reload{
+        background-color: #0A3871;
+        border-radius: 24px;
+        width: 96%;
+        height: 67px;
+        margin: 5px;
+        color: white;
+        font-family: 'Inter';
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .btn-index{
+        background-color: transparent;
+        border-radius: 24px;
+        width: 96%;
+        height: 67px;
+        margin: 5px;
+        color:#0A3871;
+        font-family: 'Inter';
+        font-size: 20px;
+        cursor: pointer;
+        border: 1px solid #0A3871;
+    }
+
+    .game{
+        color: #0A3871;;
+        background: E5E5E5;
+        padding: 8px;
+        display: none;
+    }
+    .msgGame{
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .teclado{
+        max-width: 400px;
+        width: auto;
+        margin-top: 9px;
+        text-align: center;
+    }
+
+    button.lett{
+        background-color: #0A3871;
+        padding: 5px;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+        color: white;
+        font-family: 'Inter';
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+    }
+
+    .datos{
+        display: none;
+        color: #0A3871;
+        font-family: 'Inter';
+        background-color: transparent;
+        padding: 8px;
+        text-align: center;
+        margin: 0 4px;
+        font-size: 14px;
+    }
+
+    #toast-qr{
+        visibility: hidden;
+        text-align: center;
+        min-width: 120px;
+        margin: auto;
+        width: 90%;
+        position: absolute;
+        top: 18%;
+        padding: 20px;
+    }
+
+    #toast-qr.show{
+        visibility: visible;
+    }
+    #toast-qr.hide{
+        visibility: hidden;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        padding: 8px;
+        background-color: #E5E5E5;
+        color: #0A3871;
+        font-weight: 400;
+        width: 343px;
+        font-size: 32px;
+        font-family: 'Inter';   
+    }
+
+    input::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+        opacity: 99%;
+    }
+
+    .alert{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+    }
+
+    .alert-div{
+        margin-top: 333px;  
+    }
+
+    .btns-toast {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3px;
+    }
+
+    .toastbtn-save{
+        width: 343px;
+        height: 67px;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 24px;
+        color: white;
+        font-family: 'Inter';
+        background-color: #0A3871;
+        border: 1px solid #0A3871;
+    }
+
+    .toastbtn-cancel{
+        width: 343px;
+        height: 67px;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 24px;
+        border: none;
+        color: #0A3871;
+        font-family: 'Inter';
+        background-color: transparent;
+        border: 1px solid #0A3871;
+    }    
+    
+    .block{
+        display: block;
+    }
+    #reglas{
+        color: #203239;
+        font-family: 'Inter';
+        display: none;
+    }
+}
+
+@media  only screen and (min-width: 500px) {
+    header{
+        position:relative;
+        width: 100%;
+        height: 96px;
+    }
+
+    .logo{
+    /* Top */
+    position: absolute;
+    left: 4.27%;
+    right: 87.2%;
+    top: 25%;
+    bottom: 25%;
+    }
+
+    .index{
+        margin-top: 198px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding: 24px;
+        gap: 8px;
+    }
+
+    .content{
+        margin: auto;
+        padding: 10px;
+    }
+
+    #canvas-content{
+        display: none;
+    }
+
+    #cvDraw{
+        width: 276px;
+    }
+
+    .btnInicio1 {
+        background-color: #0A3871;
+        border-radius: 24px;
+        width: 317px;
+        height: 105px;
+        margin: 5px;
+        color: white;
+        font-family: 'Inter';
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .btnInicio2{
+        background-color: transparent;
+        border-radius: 24px;
+        width: 278px;
+        height: 66px;
+        margin: 5px;
+        color:#0A3871;
+        font-family: 'Inter';
+        font-size: 20px;
+        cursor: pointer;
+        border: 1px solid #0A3871;
+    }
+
+    #toast-qr{
+        visibility: hidden;
+        text-align: flex-start;
+        min-width: 120px;
+        margin: auto;
+        width: 90%;
+        position: absolute;
+        top: 18%;
+        padding: 20px;
+    }
+
+    #toast-qr.show{
+        visibility: visible;
+    }
+    #toast-qr.hide{
+        visibility: hidden;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        padding: 9px;
+        background-color: #E5E5E5;
+        color: #0A3871;
+        font-weight: 400;
+        width: 343px;
+        font-size: 32px;
+        font-family: 'Inter'; 
+        margin-left: 120px;  
+    }
+
+    input::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+        opacity: 99%;
+    }
+
+    .alert-div{
+        margin-top: 291px;
+        margin-left: 60px;
+    }
+
+    .alert{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+    }
+
+
+    .btns-toast {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: inherit;
+        margin-top: 3px;
+        margin-left: 60px;
+    }
+
+    .toastbtn-save{
+        width: 343px;
+        height: 67px;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 24px;
+        color: white;
+        font-family: 'Inter';
+        background-color: #0A3871;
+        border: 1px solid #0A3871;
+    }
+
+    .toastbtn-cancel{
+        width: 343px;
+        height: 67px;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 24px;
+        border: none;
+        color: #0A3871;
+        font-family: 'Inter';
+        background-color: transparent;
+        border: 1px solid #0A3871;
+    }
+    
+    .container-canvas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .canvas{
+        margin-bottom: 9px;
+    }
+
+    .teclado{
+        display: none;
+    }
+    .btns-juego{
+        display: flex;
+        flex-direction: inherit;
+        justify-content: space-around;
+    }
+    .btn-reload{
+        width: 343px;
+        height: 67px;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 24px;
+        color: white;
+        font-family: 'Inter';
+        background-color: #0A3871;
+        border: 1px solid #0A3871;
+    }
+
+    .btn-index{
+        width: 343px;
+        height: 67px;
+        padding: 8px;
+        font-size: 15px;
+        margin: 5px;
+        border-radius: 24px;
+        border: none;
+        color: #0A3871;
+        font-family: 'Inter';
+        background-color: transparent;
+        border: 1px solid #0A3871;
+
+    }
+    .datos {
+        display: none;
+        color: #0A3871;
+        font-family: 'Inter';
+        background-color: transparent;
+        padding: 8px;
+        text-align: center;
+        margin: 0 4px;
+        font-size: 14px;
+      }
+
+      .boxWords{
+        text-align: center;
+        margin: auto;
+        padding-bottom: 20px;
+        display: flex;
+    }
+    span.line{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        border-bottom: 3px solid #0A3871;
+        color: #0A3871;
+        font-family: 'Inter';
+        font-size: 20px;
+    }
+
+    span{
+        width: auto;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--dkblue);
+        font-family: 'Inter';
+    }
+    span.spaceline{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border-bottom: none;
+    }
+
+    .game{
+        color: #0A3871;;
+        background: E5E5E5;
+        padding: 8px;
+        display: none;
+    }
+    .msgGame{
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+}

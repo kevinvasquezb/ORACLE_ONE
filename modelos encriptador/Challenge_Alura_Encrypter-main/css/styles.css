@@ -1,0 +1,233 @@
+body {
+  background-color: #e2e8f0;
+  display: grid;
+  min-height: 100vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container_main {
+  display: grid;
+}
+
+.container_primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container_input {
+  width: 100%;
+  text-align: center;
+}
+.container_input textarea {
+  width: 100%;
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/* .container_buttons {
+  padding-left: 2rem;
+} */
+.validate {
+  text-align: start;
+  font-size: 12px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+}
+
+.btn_encrypter {
+  background-color: #0369a1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.btn_encrypter:hover {
+  background-color: #075985;
+}
+
+.btn_decryptor {
+  background-color: #0284c7;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn_decryptor:hover {
+  background-color: #0369a1;
+}
+
+.btn_clear {
+  background-color: #0ea5e9;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn_clear:hover {
+  background-color: #0284c7;
+}
+
+.btn_icons {
+  width: 25px;
+  color: #e2e8f0;
+}
+
+.container_secondary {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+  border-radius: 32px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+}
+.text_encrypted {
+  display: none;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+.div_secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image_search {
+  display: none;
+  width: max-content;
+}
+
+.message_not_found {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.message_input_text {
+  font-size: 1rem;
+}
+
+.btn_copy {
+  display: none;
+}
+
+footer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: large;
+  align-items: center;
+}
+footer p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.icons_socials a img {
+  width: 1.5rem;
+}
+
+@media screen and (min-width: 640px) {
+  .container_primary {
+    align-items: center;
+  }
+
+  .validate {
+    text-align: start;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .btn {
+    width: 200px;
+  }
+  .container_input textarea {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding-right: 10rem;
+  }
+
+  .container_main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "element1 element2";
+    gap: 1rem;
+  }
+
+  .image_search {
+    display: block;
+  }
+
+  .container_primary {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 18px;
+  }
+  .buttons {
+    gap: 2rem;
+  }
+
+  .btn {
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+  }
+  .btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .container_secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .container_input textarea {
+    width: 70%;
+  }
+}

@@ -1,0 +1,270 @@
+body{
+    background-image: linear-gradient(yellow,orange,red);
+    background-attachment: fixed;
+}
+
+header a{
+    color: black;
+    float:right;
+    font-size: 35px;
+    margin: 0 80px 0 0;
+}
+
+main{
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.input-texto{
+    background-color: transparent;
+    background-image: url("imagenes/Watson-Amelia.png");
+    background-size: 480px;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    float: right;
+    margin: 10px 10px 5px 10px;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rampart One';
+    font-size: 1.3em;
+}
+
+p{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rampart One';
+    font-size: 1em;
+}
+
+.botones{
+    float:left;
+    margin: 50px 40px 0px 50px;
+    display: inline-block;
+}
+
+.encriptar{
+    display: inline-block;
+    position:relative;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rampart One';
+    font-weight: 700;
+    font-size: 1.3em;
+    background-color: transparent;
+    transition: color 0.5s, background 0.5s;
+    border-radius: 30px;
+}
+
+.encriptar:hover{
+    background-color: yellow;
+}
+
+.encriptar:active{
+    box-shadow: inset 0 0 100px orange;
+}
+
+.Desencriptar{
+    display: inline-block;
+    position:relative;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rampart One';
+    font-weight: 700;
+    font-size: 1.3em;
+    background-color: transparent;
+    transition: color 0.5s, background 0.5s;
+    border-radius: 30px;
+}
+
+.Desencriptar:hover{
+    background-color: yellow;
+}
+
+.Desencriptar:active{
+    box-shadow: inset 0 0 100px orange;
+}
+
+.mensaje{
+    padding: 10px; 
+    margin: 10px 50px 20px 10px;
+    border-radius: 30px;
+    float: right; 
+    width: 60%; 
+    background-image: url("imagenes/ameliaBaila.webp");
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: center;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rampart One';
+    font-size: 1.3em;
+}
+
+.copiar{
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    padding: 10px 40px;
+    float: right;
+    margin-right: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.5s, background 0.5s;
+    margin-left: 50px;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rampart One';
+    font-size: 1.3em;
+}
+
+.copiar:hover{
+    background-color: yellow;
+}
+
+.copiar:active{
+    box-shadow: inset 0 0 100px orange;
+}
+.cuadro{
+    background: rgb(255, 255, 255);
+    opacity: .3;
+    position: absolute;
+    bottom: -150;
+    animation: cuadros 3s linear infinite normal both;
+}
+
+.cuadro:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.cuadro:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 65%;
+    animation-duration: 2s;
+    animation-delay: 5s;
+}
+
+.cuadro:nth-child(3){
+    width: 33px;
+    height: 33px;
+    left: 3%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.cuadro:nth-child(4){
+    width: 30px;
+    height: 30px;
+    left: 65%;
+    animation-duration: 11s;
+    animation-delay: 9s;
+}
+
+.cuadro:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 75%;
+    animation-duration: 8s;
+    animation-delay: 5s;
+}
+
+.cuadro:nth-child(6){
+    width: 66px;
+    height: 66px;
+    left: 66%;
+    animation-duration: 6s;
+    animation-delay: 6s;
+}
+
+.cuadro:nth-child(7){
+    width: 40px;
+    height: 40px;
+    left: 85%;
+    animation-duration: 2s;
+    animation-delay: 11s;
+}
+
+.cuadro:nth-child(8){
+    width: 60px;
+    height: 60px;
+    left: 55%;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+.cuadro:nth-child(9){
+    width: 99px;
+    height: 99px;
+    left: 9%;
+    animation-duration: 9s;
+    animation-delay: 9s;
+}
+
+.cuadro:nth-child(10){
+    width: 20px;
+    height: 20px;
+    left: 5%;
+    animation-duration: 2s;
+    animation-delay: 10s;
+}
+
+.cuadro:nth-child(11){
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.cuadro:nth-child(12){
+    width: 50px;
+    height: 50px;
+    left: 15%;
+    animation-duration: 2s;
+    animation-delay: 7s;
+}
+
+@keyframes cuadros{
+    
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    
+    30%{
+        transform: translateX(30px);
+    }
+
+    50%{
+        opacity: .4;
+    }
+
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+footer{
+    text-align:center;
+    font-family: 'Rampart One';
+    font-size: 1em;
+    font-weight: 700;
+}

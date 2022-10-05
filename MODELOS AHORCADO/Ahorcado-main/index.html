@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="es">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link rel="stylesheet" href="public/css/index.css">
+        <title>Sprint 2 | Ahorcado</title>
+    </head>
+    <body>
+
+        <header>
+            <img class="logo" src="public/img/logo.png">
+        </header>
+        <!-- BOTONERA PRINCIPAL -->
+        <div class="index" id="inicio">
+            <button  class="btnInicio1" onclick="jugar()">Iniciar Juego</button><br>
+            <button  class="btnInicio2" onclick="addWord()">Agregar Nueva Palabra</button>
+        </div>
+        <!-- JUEGO CANVAS -->
+        <div id="canvas-content" class="container-canvas">
+        <canvas id="cvDraw" width="200" height="200" style="border: none;">Canvas is not supported</canvas>
+        </div>
+        <div class="content" id="juego">
+            <div class="flex">
+                <div class="boxWords" id="words">
+                </div>
+            </div>
+            <div class="msgGame">
+                <span class="game" id="win">🎉 Has Ganado!</span>
+                <span class="game" id="lose">❌ Has Perdido!</span><br>
+                <span class="game" id="lose2">La palabra es: </span><br>
+                <span class="game" id="pUsadas"></span>
+            </div>
+            <!-- BOTONERA JUEGO -->
+            <div class="btns-juego">
+                <div>
+                    <button class="btn-reload" onclick="newJuego()">Juego nuevo</button>
+                </div>
+                <div>
+                    <button class="btn-index" onclick="window.location.reload()">Desistir</button>
+                </div>
+                <div class="datos" id="intent">Intentos:10</div>
+                </div>
+            <div class="teclado" id="tcl">
+                <button onclick="getLetter('A')" class="lett" id="A" >A</button>
+                <button onclick="getLetter('B')" class="lett" id="B" >B</button>
+                <button onclick="getLetter('C')" class="lett" id="C" >C</button>
+                <button onclick="getLetter('D')" class="lett" id="D" >D</button>
+                <button onclick="getLetter('E')" class="lett" id="E" >E</button>
+                <button onclick="getLetter('F')" class="lett" id="F" >F</button>
+                <button onclick="getLetter('G')" class="lett" id="G" >G</button>
+                <button onclick="getLetter('H')" class="lett" id="H" >H</button>
+                <button onclick="getLetter('I')" class="lett" id="I" >I</button>
+                <button onclick="getLetter('J')" class="lett" id="J" >J</button>
+                <button onclick="getLetter('K')" class="lett" id="K" >K</button>
+                <button onclick="getLetter('L')" class="lett" id="L" >L</button>
+                <button onclick="getLetter('M')" class="lett" id="M" >M</button>
+                <button onclick="getLetter('N')" class="lett" id="N" >N</button>
+                <button onclick="getLetter('Ñ')" class="lett" id="Ñ" >Ñ</button>
+                <button onclick="getLetter('O')" class="lett" id="O" >O</button>
+                <button onclick="getLetter('P')" class="lett" id="P" >P</button>
+                <button onclick="getLetter('Q')" class="lett" id="Q" >Q</button>
+                <button onclick="getLetter('R')" class="lett" id="R" >R</button>
+                <button onclick="getLetter('S')" class="lett" id="S" >S</button>
+                <button onclick="getLetter('T')" class="lett" id="T" >T</button>
+                <button onclick="getLetter('U')" class="lett" id="U" >U</button>
+                <button onclick="getLetter('V')" class="lett" id="V" >V</button>
+                <button onclick="getLetter('W')" class="lett" id="W" >W</button>
+                <button onclick="getLetter('X')" class="lett" id="X" >X</button>
+                <button onclick="getLetter('Y')" class="lett" id="Y" >Y</button>
+                <button onclick="getLetter('Z')" class="lett" id="Z" >Z</button>
+            </div>
+        </div>
+
+        <div id="toast-qr" class="toast" >
+            <input type="text" id="palabra" onkeyup="upper()" maxlength="8" autocomplete="off" placeholder="Introduce la palabra" required>
+           
+            <div class="alert-div">
+            <p class="alert"><img src="public/img/alerta.png">   Max. 8 letras.</p>
+            </div>
+            <div class="btns-toast">
+
+                <button class="toastbtn-save" onclick="valida()">Guardar y Empezar</button>
+                <button class="toastbtn-cancel" onclick="window.location.reload()">Cancelar</button>
+            </div>   
+        </div>
+
+
+    </body>
+    <script src="public/js/index.js"></script>
+</html>

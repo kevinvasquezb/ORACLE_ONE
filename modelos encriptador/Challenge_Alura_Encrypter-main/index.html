@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+  <title>Encriptador</title>
+</head>
+
+<body>
+  <header class="header">
+    <div>
+      <p>ENCRIPTADOR.CO</p>
+    </div>
+  </header>
+  <section class="container_main">
+    <article class="container_primary">
+      <div class="container_input">
+        <textarea class="container_text_main" name="" id="inputTxt" placeholder="Ingresa tu texto aquí"
+          rows="10"></textarea>
+      </div>
+
+      <div class="container_buttons">
+        <p class="validate"><b>Solo letras minúsculas y sin acentos</b></p>
+        <div class="buttons">
+          <button class="btn btn_encrypter"><span>Encriptar</span> <img class="btn_icons" src="assets/lock-solid.svg"
+              alt=""></button>
+          <button class="btn btn_decryptor"><span>Desencriptar</span> <img class="btn_icons"
+              src="assets/unlock-solid.svg" alt=""></button>
+          <button class="btn btn_clear"><span>Limpiar</span> <img class="btn_icons" src="assets/brush-solid.svg"
+              alt=""></button>
+        </div>
+      </div>
+
+    </article>
+
+    <article class="container_secondary">
+      <textarea type="text" readonly class="text_encrypted" rows="10" pattern="[a-z0-9]+"></textarea>
+      <div class="div_secondary" id="hidden_div">
+        <img class="image_search" src="assets/7jM3.gif" alt="">
+        <p class="message_not_found">Ningún Mensaje fue encontrado</p>
+        <p class="message_input_text">Ingrese el texto que deseas encriptar o desencriptar</p>
+      </div>
+      <button class="btn btn_copy">Copiar</button>
+    </article>
+  </section>
+
+
+  <footer>
+    <div class="icons_socials"><a href="https://github.com/ElCabal"><img src="assets/github-brands.svg" alt="github"
+          target="_blank"></a>
+      <a href="https://www.linkedin.com/in/luis-felipe-cabal/" target="_blank"><img src="assets/linkedin-brands.svg"
+          alt="linkedin"></a>
+    </div>
+
+    <p>Challenge Alura Latam 2022 - Desarrollado por <b>Luis Felipe Cabal</b></p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
