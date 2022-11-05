@@ -41,3 +41,10 @@ body{
     border-radius: 5px;
 
 }
+/*PARA DESKTOP DE 1024px EN ADELANTE*/
+@media screen and (min-width:1024px) {
+    .container{
+        padding-left:calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}

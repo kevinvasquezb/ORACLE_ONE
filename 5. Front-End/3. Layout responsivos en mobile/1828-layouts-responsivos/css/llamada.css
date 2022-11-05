@@ -31,3 +31,23 @@
 .llamada__boton {
     width: 100%;
 }
+/*PARA TABLETS DE 768px A 1024px */
+@media screen and (min-width:768px){
+    .llamada__texto{
+        max-width:600px;
+    }
+
+}
+
+/*PARA DESKTOP DE 1024px EN ADELANTE*/
+@media screen and (min-width:1024px) {
+    .llamada{
+        background-image: url(../img/bg-intro.jpg);
+        background-size: cover;
+        padding-top:  8.25rem;
+    }
+    .llamada__titulo{
+        font-size: 3.25rem;
+        margin-bottom: 2rem;
+    }
+}
