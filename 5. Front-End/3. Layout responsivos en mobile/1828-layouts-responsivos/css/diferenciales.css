@@ -28,23 +28,25 @@
 .item__texto {
     line-height: normal;
 }
-.diferenciales__item-reloj{
-    background-image:url(../img/icono-reloj.png) ;
+
+.diferenciales__item-reloj {
+    background-image: url(../img/icono-reloj.png);
 }
 
-.diferenciales__item-dinero{
-    background-image:url(../img/icono-dinero.png) ;
+.diferenciales__item-dinero {
+    background-image: url(../img/icono-dinero.png);
 }
 
-.diferenciales__item-quimica{
-    background-image:url(../img/icono-quimica.png) ;
+.diferenciales__item-quimica {
+    background-image: url(../img/icono-quimica.png);
 }
 
-/*PARA DESKTOP DE 1024px EN ADELANTE*/
-@media screen and (min-width:1024px) {
-    .diferenciales{
+@media screen and (min-width: 1024px) {
+    .diferenciales {
         background-color: var(--background-ceniza-claro);
+    }
+    
+    .diferenciales__lista {
         justify-content: space-around;
     }
-
 }

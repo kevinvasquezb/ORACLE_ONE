@@ -31,13 +31,7 @@
 .llamada__boton {
     width: 100%;
 }
-/*PARA TABLETS DE 768px A 1024px */
-@media screen and (min-width:768px){
-    .llamada__texto{
-        max-width:600px;
-    }
 
-}
 
 /*PARA DESKTOP DE 1024px EN ADELANTE*/
 @media screen and (min-width:1024px) {

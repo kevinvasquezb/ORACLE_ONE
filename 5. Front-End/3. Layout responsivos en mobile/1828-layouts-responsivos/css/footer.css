@@ -24,10 +24,9 @@
 
 .footer__navegacion {
     color: var(--background-blanco);
-    font:var(--open-sans);
+    font: var(--open-sans);
     text-align: center;
     line-height: 3;
-    
 }
 
 
@@ -37,14 +36,13 @@
     margin: 0 .5rem .7rem;
 }
 
-/*PARA DESKTOP DE 1024px EN ADELANTE*/
 @media screen and (min-width: 1024px) {
-    .footer{
+    .footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .footer__navegacion{
+    .footer__navegacion {
         text-align: left;
         min-width: 600px;
     }

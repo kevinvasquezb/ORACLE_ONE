@@ -63,7 +63,7 @@
 }
 
 /*PARA DESKTOP DE 1024px EN ADELANTE*/
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
     .institucional__contenido{
         width: 100%;
         display: flex;

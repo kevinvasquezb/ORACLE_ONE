@@ -105,12 +105,7 @@
     border-color: var(--planes-card-mega);
 }
 
-@media screen and (min-width: 768px) {
-    .tarjetas{
-        max-width: 400px;
-    }
-    
-}
+
 /*PARA DESKTOP DE 1024px EN ADELANTE*/
 @media screen and (min-width:1024px) {
     .planes__tarjetas{

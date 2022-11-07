@@ -34,22 +34,21 @@
 }
 
 /*PARA DESKTOP DE 1024px EN ADELANTE*/
-@media screen and (min-width:1024px) {
-    .sobre-nosotros{
+@media screen and (min-width: 1024px) {
+    .sobre_nosotros {
         display: flex;
     }
-    .sobre_nosotros__contenido{
+    .sobre_nosotros__contenido {
         margin-right: 3rem;
     }
-    .sobre_nosotros__titulo{
+    .sobre_nosotros__titulo {
         text-align: left;
     }
-    .sobre-nosotros__texto--division{
+    .sobre-nosotros__texto--division {
         border-bottom: 1px solid var(--background-ceniza-medio);
         padding-bottom: 1.5rem;
     }
-
-    .sobre_nosotros__imagen{
-        display:block;
+    .sobre_nosotros__imagen {
+        display: block;
     }
-} 
+}
